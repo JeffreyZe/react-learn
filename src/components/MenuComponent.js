@@ -34,7 +34,7 @@ const Menu = (props) => {
     );
 }
 
-// // React Component implementation
+// // React class Component implementation
 // class Menu extends Component {
 
 //     constructor(props) {

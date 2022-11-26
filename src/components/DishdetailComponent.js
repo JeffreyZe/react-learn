@@ -68,7 +68,7 @@ const Dishdetail = (props) => {
     }
 }
 
-// // React Component implementation
+// // React class Component implementation
 // class Dishdetail extends Component {
 
 //     constructor(props) {
