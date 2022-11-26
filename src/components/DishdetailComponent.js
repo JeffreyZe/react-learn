@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody,
+import { Card, CardImg, CardText, CardBody,
     CardTitle } from 'reactstrap';
 
 
@@ -40,7 +40,9 @@ class Dishdetail extends Component {
                 return (
                     <div>
                         <p> {comment.comment} </p>
-                        <p> -- {comment.author}, {comment.date.substring(0,10)}  </p>
+                        {/* <p> -- {comment.author}, {comment.date.substring(0,10)}  </p> */}
+                        <p> -- {comment.author}, {new Intl.DateTimeFormat('en-SG', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))} </p>
+                        {/* {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))} */}
                     </div>
                 );
             });
